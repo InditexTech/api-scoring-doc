@@ -1,14 +1,14 @@
 ---
 layout: default
 title: CLI
-parent: Certification System
+parent: Scoring System
 nav_order: 4
 ---
 
-# Certification **CLI**
+# Scoring **CLI**
 {: .no_toc }
 
-With `apicli`, you can make requests to the certification system and get your API a grade.
+With `apicli`, you can make requests to the scoring system and get your API a grade.
 {: .fs-6 .fw-300 }
 
 <br>
@@ -25,7 +25,7 @@ Once you install this CLI, you will be able to:
 
 * [x] Verify if an API is well-designed.
 * [x] Verify an API contract specification (OpenAPI, AsyncAPI, Avro, Protobuf Buffer) or the respective documentation files (Markdown).
-* [x] Update the rulesets used to linter your certification files in the certification service.
+* [x] Update the rulesets used to linter your scoring files in the scoring service.
 
 ## Installation and usage
 
@@ -55,9 +55,9 @@ npm link
 
 Then, you can use any of these commands: 
 
-- `refresh-ruleset`, which will update the rules used to validate your API in the certification service. 
+- `refresh-ruleset`, which will update the rules used to validate your API in the scoring service. 
 
-- `verify`, with which you can obtain the certification of the API, all along with some helpful information like version numbers or protocol. 
+- `verify`, with which you can obtain the score of the API, all along with some helpful information like version numbers or protocol. 
 
 - `verify-file`, verifies an OpenAPI specification file.
 - general and command-dedicated `help`, in case you need further information.
@@ -325,7 +325,7 @@ You will get the following output:
 [(Back to top)](#top)
 {: .fs-2 }
 
-The certification service already has some rules that are downloaded along with the repo by default. If you want to connect with the [Rulesets repositoy](link) you need to execute the following command This command is used just to update the rulesets in the certification service. Therefore, to do so, you have to run the following:
+The scoring service already has some rules that are downloaded along with the repo by default. If you want to connect with the [Rulesets repositoy](link) you need to execute the following command. This command is used just to update the rulesets in the scoring service. Therefore, to do so, you have to run the following:
 
 {: .ml-4}
 ```bash

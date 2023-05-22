@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rulesets
-parent: Certification System
+parent: Scoring System
 nav_order: 2
 ---
 

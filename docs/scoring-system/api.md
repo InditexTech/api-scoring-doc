@@ -1,11 +1,11 @@
 ---
 layout: default
 title: API
-parent: Certification System
+parent: Scoring System
 nav_order: 3
 ---
 
-# Certification **API**
+# Scoring **API**
 {: .no_toc }
 
 Let's talk about the available API endpoints, even though they are all documented in the API itself! 🤠 
@@ -16,8 +16,6 @@ Let's talk about the available API endpoints, even though they are all documente
 
 1. TOC
 {:toc}
-
-<!-- todo: link a Swagger. -->
 
 ## Refresh the rulesets
 

@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Microservice
-parent: Certification System
+parent: Scoring System
 nav_order: 1
 ---
 
-# Certification service
+# Scoring service
 {: .no_toc }
 
 The microservice responsible for getting a grade for each API.
@@ -14,7 +14,7 @@ The microservice responsible for getting a grade for each API.
 <br>
 
 <div >
-    <img src="/certification-system/cert-image.png" width="20%" style="float: right;"> 
+    <img src="/scoring-system/cert-image.png" width="20%" style="float: right;"> 
 </div>
 
 ## Table of contents
@@ -27,16 +27,16 @@ The microservice responsible for getting a grade for each API.
 
 ## Summary
 
-API Certification is the microservice responsible for getting a grade for each API. It has several modules to certify different aspects of each API and calculate a final score for them using a weighted average.
+API Scoring is the microservice responsible for getting a grade for each API. It has several modules to certify different aspects of each API and calculate a final score for them using a weighted average.
 
-This open-source API-First-based certification service evaluates your APIs according to a set of rules that the user can customize.
+This open-source API-First-based scoring service evaluates your APIs according to a set of rules that the user can customize.
 
 We want to make it simple. In the end, each certified API will be broken down into a single grade, which will mean how well-design your API is. 
 
 If you want to know if your API complies with your design rules, if it addresses some of the OWASP vulnerabilities, and if it complies with documentation guidelines… this is your service.
 
 {: .warning }
-Due to an [issue in protolint](https://github.com/yoheimuta/protolint/issues/144), the certification of gRPC APIs in Windows it is not possible.
+Due to an [issue in protolint](https://github.com/yoheimuta/protolint/issues/144), getting a score for gRPC APIs in Windows it is not possible.
 
 ## Installation
 
@@ -47,7 +47,7 @@ Deploy the service following these steps:
 1. Clone the repository:
 
     ```zsh
-    git clone git@github.com:inditex/mic-openapicertification.git
+    git clone git@github.com:InditexTech/api-scoring-engine.git
     ```
 
 2. Place yourself in the correct package: 
@@ -70,7 +70,7 @@ Deploy the service following these steps:
       CERWS_GH_USERNAME # GitHub username.
       CERWS_GH_PASSWORD # GitHub personal access token.
       ```
-   - or in the [`configmap.yml` file](https://github.com/inditex/mic-openapicertification/blob/develop/packages/certification-service/code/config/configmap.yml):
+   - or in the [`configmap.yml` file](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/config/configmap.yml):
       ```yml
       cerws:
         common:
@@ -89,25 +89,25 @@ Deploy the service following these steps:
 
 <br>
 
-You can make use of this service by just making a request to its [API](/certification-system/api/) or, even better, using the [apicli](/certification-system/cli/) CLI tool that we have developed for this matter.
+You can make use of this service by just making a request to its [API](/scoring-system/api/) or, even better, using the [Scoring CLI](/scoring-system/cli/) tool that we have developed for this matter.
 {: .mb-6}
 
-You can also use the [IDE Extensions](/ide-extensions/overview/) to help you design your API at the same time you validate it with the service. The API hub provides the rating of the modules evaluated on the certification service, giving you real-time insights into what score to expect.
+You can also use the [IDE Extensions](/ide-extensions/overview/) to help you design your API at the same time you validate it with the service. The API hub provides the rating of the modules evaluated on the scoring service, giving you real-time insights into what score to expect.
 {: .mb-4}
 
 {: .highlight}
-You can check the **available enpoinds** in the [API](/certification-system/api/) section.
+You can check the **available enpoinds** in the [API](/scoring-system/api/) section.
 
 ## Performance and configuration
 {: .mt-8}
 
-As you have previously read, the microservice works with a compound of rules that come by default in the [Rulesets repository](https://github.com/inditex/mic-openapicertification/tree/develop/packages/certification-service/code/src/rules).
+As you have previously read, the microservice works with a compound of rules that come by default in the [Rulesets repository](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/src/rules).
 {: .mb-4}
 
 ### Scoring
 {: .fs-5}
 
-In order to give meaningful feedback to the users while evaluating their APIs, API Certification serves a score from *A<sup>+</sup>* to *D*, so developers can have a rating scale to refer to know the aspects that compromise their APIs and how to improve them.
+In order to give meaningful feedback to the users while evaluating their APIs, API Scoring system serves a grade from *A<sup>+</sup>* to *D*, so developers can have a rating scale to refer to know the aspects that compromise their APIs and how to improve them.
 
 Since Spectral, markdownlint, and protolint use a similar engine, we have defined a mechanism that works in the same fashion for the Design, Security, and Documentation modules.
 
@@ -133,7 +133,7 @@ The scoring system for each component will follow the previously mentioned *lett
 |50 - 74|C|
 |0 - 49|D|
 
-To obtain the final certification of an API, the microservice considers every *individually-certified* module and operates according to a **weighted average**.
+To obtain the final score of an API, the microservice considers every *individually-certified* module and operates according to a **weighted average**.
 {: .mt-8}
 
 {: .highlight}
@@ -211,7 +211,7 @@ The Design and Security modules' grade is calculated the same way, according to 
 <!-- $$ModuleGrade = \left(1 -\frac{Warnings}{TotalRules}-\frac{Errors}{TotalRules}* N\right) * 100$$ -->
 
 <p align="center">
-  <img src="/certification-system/module-grade-1.png" style="display: block; width: 55%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="/scoring-system/module-grade-1.png" style="display: block; width: 55%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 1. Module grade calculation.</span>
 </p>
 
@@ -247,10 +247,10 @@ $$OverallScore = DesignGrade * 0.85 + DocumentationGrade * 0.15
 $$ -->
 
 <p align="center">
-  <img src="/certification-system/overall-score-1.png" style="display: block; width: 95%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="/scoring-system/overall-score-1.png" style="display: block; width: 95%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 2. Overall score calculation (3 modules approach).</span>
   <br><br>
-  <img src="/certification-system/overall-score-2.png" style="display: block; width: 73%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="/scoring-system/overall-score-2.png" style="display: block; width: 73%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 3. Overall score calculation (2 modules approach).</span>
 </p>
 
@@ -316,13 +316,13 @@ Once you install and deploy the service as explained in the [⚙️ Installation
         markdown-lint-config: # Path of the markdownlint configuration file 
         markdown-lint-api-custom-rules: # File path with custom markdownlint rules 
     ```
-* You can also use the [apicli](link) tool to update the rulesets with the [Rulesets](link) repository with a CLI command.
+* You can also use the [apicli](/scoring-system/cli/) tool to update the rulesets with the [Rulesets](link) repository with a CLI command.
 
 
 ### New rules creation
 {: .mt-8}
 
-The certification rules are based on different linters depending on the files that are linting. If you want to create your own rules, you should follow each linter's documentation:
+The scoring rules are based on different linters depending on the files that are linting. If you want to create your own rules, you should follow each linter's documentation:
 
 - For OpenAPI/AsyncAPI, follow [Spectral documentation](https://docs.stoplight.io/docs/spectral/01baf06bdd05a-create-a-ruleset).
 - For documentation files, follow [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/main/doc/CustomRules.md).

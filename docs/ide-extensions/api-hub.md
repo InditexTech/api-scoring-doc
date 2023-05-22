@@ -8,7 +8,7 @@ nav_order: 1
 # API Hub
 {: .no_toc }
 
-A tool that establishes communication between a certification web and the files of the IDE.
+A tool that establishes communication between a scoring web and the files of the IDE.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -17,26 +17,26 @@ A tool that establishes communication between a certification web and the files 
 1. TOC
 {:toc}
 
-This extension emerges from the need for a tool that combines the power of the certification service and the power of IDEs.
+This extension emerges from the need for a tool that combines the power of the scoring service and the power of IDEs.
 
 This web can be used as a web itself or integrated into the IDE through an iFrame format.
 
-This extension works by sending a ZIP file with the repository to the web service, which obtains a certification grade. This web can display errors and warnings by linting the APIs and displaying different grades. Coming back to the file and correcting the mistakes can be done by clicking the error/warning on the iFrame, so the communication is bidirectional.
+This extension works by sending a ZIP file with the repository to the web service, which obtains a grade. This web can display errors and warnings by linting the APIs and displaying different grades. Coming back to the file and correcting the mistakes can be done by clicking the error/warning on the iFrame, so the communication is bidirectional.
 
-Once you update the linted errors, you can press play on the iFrame and see the new grade because a new certification was triggered with the updated file.
+Once you update the linted errors, you can press play on the iFrame and see the new grade because a new grade was triggered with the updated file.
 
 ## Settings
 
 To start using the API hub extension, you need to configure two URLs in the **APIHub Settings**:
-- The `Certification URL` needs to be set to the URL where the [certification service](link) is deployed. The default value is `http://localhost:8080/apifirst/v1/validations`.
-- The `Frontend URL` has to be set to the URL where the [SPA](link) is deployed. The default value is `http://localhost:3000/`.
+- The `Certification URL` needs to be set to the URL where the [scoring service](/scoring-system/microservice/) is deployed. The default value is `http://localhost:8080/apifirst/v1/validations`.
+- The `Frontend URL` has to be set to the URL where the [SPA](/ide-extensions/overview/#spa-deployment) is deployed. The default value is `http://localhost:3000/`.
 
 ## Usage
 {: .mb-3}
 
 {: .highlight}
 > To start using this extension, you need to:
-> 1. Deploy the [Certification service](link-to-readme).
+> 1. Deploy the [Scoring service](/scoring-system/microservice/).
 > 2. Deploy the [SPA](#spa-deployment).
 > 3.  [Install](#%EF%B8%8F-installation) it.
 
@@ -60,7 +60,7 @@ To start using the API hub extension, you need to configure two URLs in the **AP
    <img src="/ide-extensions/buttons.png" style="display: block; width: 300px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
    </p>
 
-3. Check out how well-designed your API is through the scores obtained by the certification service.
+3. Check out how well-designed your API is through the scores obtained by the scoring service.
 
 4. Go to the linted errors by clicking on the **Rule break line link**, and correct them for a better score!
 
@@ -72,16 +72,16 @@ To start using the API hub extension, you need to configure two URLs in the **AP
   - click on the upper play button.
   - close the iFrame and re-open it as it was made in _Step 2_.
 
-## Repository certification
+## Repository scoring
 
 When you open the iFrame, the following view is displayed:
    <p align="center">
       <img src="/ide-extensions/iFrame.png" style="display: block; width: 450px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
    </p>
 
-All the APIs that exist in the repository are going to be shown as tabs. Each API is certified individually, and you can switch between them to see which are the warnings for each of them.
+All the APIs that exist in the repository are going to be shown as tabs. Each API gets a score individually, and you can switch between them to see which are the warnings for each of them.
 
-Every API is certified with four grades: One grade for each module (Design, Security, and Documentation) and the other for the overall. To know how the scoring is performed, check out the Scoring criteria.
+Every API is scored with four grades: One grade for each module (Design, Security, and Documentation) and the other for the overall. To know how the scoring is performed, check out the Scoring criteria.
 
 ## File validation
 
@@ -89,7 +89,7 @@ For the Visual Studio Code extension, there is also another button, the _APIHub 
 
 Clicking on the _API 360 Linter_ button will display a new window in which you can select a file that contains your custom rules.
 
-![Validate file view - todo](todo)
+<!-- [Validate file view - todo](todo) -->
 
 With this new functionality, you can lint any file with your custom rules!
 

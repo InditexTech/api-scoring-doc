@@ -3,21 +3,21 @@ layout: page
 title: Home
 permalink: /
 nav_order: 1
-description: The API Certifiation Suite is a compound of tools that make your journey of designing an API much more easy.
+description: The API Scoring Suite is a compound of tools that make your journey of designing an API much more easy.
 ---
 
-# Optimize your APIs with the **API Certification Suite**
+# Optimize your APIs with the **API Scoring Suite**
 {: .fs-9 }
 
-This open-source API-First-based certification service evaluates your APIs according to a set of rules that the user can customize.
+This open-source API-First-based Scoring service evaluates your APIs according to a set of rules that the user can customize.
 {: .fs-6 .fw-300 }
 
-[Get started now](/getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Get started now](#get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View it on GitHub](/github-repositories){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-The **API Certification Suite** is a set of tools that can help you to achieve the best API you can get. It is made of the following components:
+The **API Scoring Suite** is a set of tools that can help you to achieve the best API you can get. It is made of the following components:
 {: .mb-7}
 
 <table>
@@ -30,17 +30,17 @@ The **API Certification Suite** is a set of tools that can help you to achieve t
   </thead>
   <tbody>
     <tr>
-      <td rowspan= "4">Certification system</td>
+      <td rowspan= "4">Scoring system</td>
       <td>Microservice</td>
       <td>The main piece that <strong>certifies an API</strong> with a grade according to a certain set of rules. It gives you an overall score according on how well design is your API.</td>
     </tr>
     <tr>
       <td>Rulesets</td>
-      <td>The set of rules that <strong>nourishes the certification service</strong>. They can be customized or changed by a new set.</td>
+      <td>The set of rules that <strong>nourishes the scoring service</strong>. They can be customized or changed by a new set.</td>
     </tr>
     <tr>
       <td>API</td>
-      <td>The <strong>entrance gate</strong> to the microservice. Its endpoints are used by the certification tools like the CLI or the extensions.</td>
+      <td>The <strong>entrance gate</strong> to the microservice. Its endpoints are used by the scoring tools like the CLI or the extensions.</td>
     </tr>
     <tr>
       <td>CLI</td>
@@ -70,15 +70,15 @@ TO DO
 
 Let's start and see how you can build the whole ecosystem up!
 
-1. Firs of all, you need to **deploy the microservice**. To do so, follow the [Microservice installation guide](/certification-system/microservice/#installation).
+1. Firs of all, you need to **deploy the microservice**. To do so, follow the [Microservice installation guide](/scoring-system/microservice/#installation).
 
-2. Test the microservice by [Installing the CLI](/certification-system/cli/#installation-and-usage). Test any API you have in hand!
+2. Test the microservice by [Installing the CLI](/scoring-system/cli/#installation-and-usage). Test any API you have in hand!
 
 3. Once you've verified that the microservice is up and running, you can now [deploy the SPA](/ide-extensions/overview/#spa-deployment) that the API Hub extension will use later on.
 
-4. [Install the API Hub](/ide-extensions/overview/#installation) in VS Code or IntelliJ and [configure it](/ide-extensions/api-hub/#settings) to work with the certification service.
+4. [Install the API Hub](/ide-extensions/overview/#installation) in VS Code or IntelliJ and [configure it](/ide-extensions/api-hub/#settings) to work with the scoring service.
 
-5. [Install the Quick Fix]() to design faster!
+5. [Install the Quick Fix](/ide-extensions/overview/#installation) to design faster!
 
 ## About the project
 {: .mb-3}
@@ -88,7 +88,7 @@ Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Inditex](https://www.i
 ### License
 {: .mb-3}
 
-The **API Certification Suite** is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+The **API Scoring Suite** is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
 
 ### Contributing
 {: .mb-3}

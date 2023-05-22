@@ -19,14 +19,15 @@
 # in the templates via {{ site.myvariable }}.
 
 title: API Certification Suite
-email: oso@inditex.com
+email: albalro@ext.inditex.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Documentation site for the API Scoring engine and extensions. Want to upgrade your API to the next level? This is your tool.
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  InditexTech
-repository: InditexTech/api-scoring-doc
-
+github_username:  albalro
+repository: albalro/albalro.github.io
 
 # Build settings
 # theme: just-the-docs
@@ -88,11 +89,11 @@ search:
 
 # Aux links for the upper right navigation
 aux_links:
-  "InditexTech on GitHub":
-    - "//github.com/InditexTech"
+  "Just the Docs on GitHub":
+    - "//github.com/just-the-docs/just-the-docs"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: true
+aux_links_new_tab: false
 
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
@@ -114,7 +115,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/InditexTech/api-scoring-doc" # the github URL for your repo
+gh_edit_repository: "https://github.com/albalro/albalro.github.io" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately

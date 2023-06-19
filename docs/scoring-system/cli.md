@@ -25,37 +25,37 @@ Once you install this CLI, you will be able to:
 
 * [x] Verify if an API is well-designed.
 * [x] Verify an API contract specification (OpenAPI, AsyncAPI, Avro, Protobuf Buffer) or the respective documentation files (Markdown).
-* [x] Update the rulesets used to linter your scoring files in the scoring service.
 
 ## Installation and usage
 
-You can start by cloning [this repository](https://github.com/inditex/clr-apicli.git): 
+1. You can start by cloning [this repository](https://github.com/InditexTech/api-scoring-engine): 
 
-{: .ml-4}
-```bash
-git clone https://github.com/inditex/clr-apicli.git
-```
+    ```zsh
+    git clone git@github.com:InditexTech/api-scoring-engine.git
+    ```
 
-Install the downloaded code dependencies:  
+2. Place yourself in the correct package: 
 
-{: .ml-4}
-```bash
-npm i
-```
+    ```zsh
+    cd packages/api-cli/code
+    ```
 
-Link the 'apicli' command to local installation:  
+3. Install the downloaded code dependencies:  
 
-{: .ml-4}
-```bash
-npm link
-```
+    ```zsh
+    npm i
+    ```
+
+4. Link the `apicli` command to local installation:  
+
+    ```zsh
+    npm link
+    ```
 
 
 ## Comands
 
 Then, you can use any of these commands: 
-
-- `refresh-ruleset`, which will update the rules used to validate your API in the scoring service. 
 
 - `verify`, with which you can obtain the score of the API, all along with some helpful information like version numbers or protocol. 
 
@@ -321,23 +321,3 @@ You will get the following output:
 ```
 
 
-### \> `refresh-rulesets` command
-[(Back to top)](#top)
-{: .fs-2 }
-
-The scoring service already has some rules that are downloaded along with the repo by default. If you want to connect with the [Rulesets repositoy](link) you need to execute the following command. This command is used just to update the rulesets in the scoring service. Therefore, to do so, you have to run the following:
-
-{: .ml-4}
-```bash
-apicli refresh-ruleset
-```
-
-And you can expect the next output:
-
-{: .ml-4}
-```bash
-Success
-```
-
-{: .note}
-If you want to make modifications in the Rulesets repository, feel free! Then, remember to execute the `refresh-ruleset` command to update the rules in the service with the new ones!

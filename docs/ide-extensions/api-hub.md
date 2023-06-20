@@ -28,7 +28,7 @@ Once you update the linted errors, you can press play on the iFrame and see the 
 ## Settings
 
 To start using the API hub extension, you need to configure two URLs in the **APIHub Settings**:
-- The `Certification URL` needs to be set to the URL where the [scoring service](/scoring-system/microservice/) is deployed. The default value is `http://localhost:8080/apifirst/v1/validations`.
+- The `Certification URL` needs to be set to the URL where the [scoring service](/scoring-system/microservice/) is deployed. The default value is `http://localhost:8080/apifirst/v1/validate`.
 - The `Frontend URL` has to be set to the URL where the [SPA](/ide-extensions/overview/#spa-deployment) is deployed. The default value is `http://localhost:3000/`.
 
 ## Usage

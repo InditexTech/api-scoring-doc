@@ -83,12 +83,12 @@ Let's start and see how you can build the whole ecosystem up!
 ## About the project
 {: .mb-3}
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Inditex](https://www.inditex.com/itxcomweb/es/home).
+API Scoring suite is &copy; 2023-{{ "now" | date: "%Y" }} by [Inditex Tech](https://github.com/InditexTech).
 
 ### License
 {: .mb-3}
 
-The **API Scoring Suite** is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+The **API Scoring Suite** is distributed by an [Apache License 2.0](https://github.com/InditexTech/api-scoring-engine/blob/main/LICENSE).
 
 ### Contributing
 {: .mb-3}

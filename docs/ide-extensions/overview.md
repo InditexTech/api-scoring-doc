@@ -12,7 +12,7 @@ The set of extensions that integrates the API-design essential tools into their 
 {: .fs-6 .fw-300 }
 
 <div align="center">
-    <img src="/ide-extensions/quick.svg" width="100px" style="margin-right: 30px">
+    <img src="/ide-extensions/quick.svg" width="100px" style="margin-right: 30px"> 
     <img src="/ide-extensions/api-hub-logo.svg" width="100px" style="margin-right: 30px">
 </div>
 
@@ -39,7 +39,7 @@ To work, the API hub uses an in-IDE-integrated SPA, that displays visual informa
 In the **VS Code**, you can take advantage of the [Spectral quick fix](#spectral-quick-fix) plugin to easily correct the linted errors. See in the previous gif how errors are corrected with a click!
 
 <span class= "d-flex mt-5">
-  [<img src="/scoring-system/github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/inditex/cac-opencertificationplugins){: .btn .mx-auto  .mt-2 .mb-4}
+  [<img src="/scoring-system/github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-ide-plugins){: .btn .mx-auto  .mt-2 .mb-4}
 </span>
 
 {: .note}
@@ -51,34 +51,30 @@ You need to have the SPA running so that the extensions are working seamesly. To
 
 1. Clone [this repository](https://github.com/InditexTech/api-scoring-ide-plugins):
 
-{: .ml-4}
-```bash
-git clone git@github.com:inditex/cac-opencertificationplugins.git
-```
+    ```bash
+    git clone git@github.com:InditexTech/api-scoring-ide-plugins.git
+    ```
 
 
 2. Place yourself in the correct directory:
 
-{: .ml-4}
-```bash
-cd plugins/spa-apihub/code
-```
+    ```bash
+    cd plugins/spa-apiscoringviewer/code
+    ```
 
 
 3. Install the dependencies:
 
-{: .ml-4}
-```bash
-npm i
-```
+    ```bash
+    npm i
+    ```
 
 
 4. Once the process finishes, start the SPA:
 
-{: .ml-4}
-```bash
-npm run start
-```
+    ```bash
+    npm run start
+    ```
 
 ## Installation
 

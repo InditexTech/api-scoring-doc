@@ -44,7 +44,7 @@ Know that we recommend the use of [Node v18.13.0](https://nodejs.org/es/blog/rel
 
 Deploy the service following these steps: 
 
-1. Clone the repository:
+1. Clone [this repository](https://github.com/InditexTech/api-scoring-engine):
 
     ```zsh
     git clone git@github.com:InditexTech/api-scoring-engine.git

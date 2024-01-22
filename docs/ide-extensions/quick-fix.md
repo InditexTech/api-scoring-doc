@@ -29,7 +29,7 @@ This extension does not need any settings. Just download it and start enjoying i
 
 ## Usage
 
-To use it, open an API contract on VS Code, and if it has errors or warnings, your code will have **underlined text**. This happens because Spectral founds issues on your contract that break the API guidelines.
+To use it, open an API contract on VS Code, and if it has errors or warnings, your code will have **underlined text**. This happens because Spectral found issues on your contract that break the API guidelines.
 
 To **correct the warnings/errors**, put the cursor above the highlighted text, and you will see a tooltip with all the possible corrections that can be done - you can add, modify, or delete code.
 

@@ -32,9 +32,7 @@ These set of extensions were built with a cooperation mindset between them: they
 
 The [API hub](#api-hub) provides the rating of the modules evaluated on the [Scoring service](/scoring-system/microservice/), giving you real-time insights into what score to expect. For every rule broken, you can easily open the respective file/line on your IDE! And it works with Visual Studio Code and IntelliJ.
 
-To work, the API hub uses an in-IDE-integrated SPA, that displays visual information about the broken rules and uses bidirectional communication with your API files. Check this gif to see a preview:
-
-!image[preview-gif]
+To work, the API hub uses an in-IDE-integrated SPA, that displays visual information about the broken rules and uses bidirectional communication with your API files.
 
 In the **VS Code**, you can take advantage of the [Spectral quick fix](#spectral-quick-fix) plugin to easily correct the linted errors. See in the previous gif how errors are corrected with a click!
 

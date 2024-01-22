@@ -12,10 +12,10 @@ It is the microservice responsible for getting a grade for each API.
 {: .fs-6 .fw-300 }
 
 <br>
-
+<!-- 
 <div >
     <img src="/scoring-system/cert-image.png" width="20%" style="float: right;"> 
-</div>
+</div> -->
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -316,7 +316,7 @@ Once you install and deploy the service as explained in the [⚙️ Installation
         markdown-lint-config: # Path of the markdownlint configuration file 
         markdown-lint-api-custom-rules: # File path with custom markdownlint rules 
     ```
-* You can also use the [apicli](/scoring-system/cli/) tool to update the rulesets with the [Rulesets](link) repository with a CLI command.
+* You can also use the [apicli](/scoring-system/cli/) tool to update the rulesets with the [Rulesets](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/src/rules) repository with a CLI command.
 
 
 ### New rules creation

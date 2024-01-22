@@ -96,7 +96,7 @@ The **API Scoring Suite** is distributed by an [Apache License 2.0](https://gith
 When contributing to this repository, please discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor on the [CONTRIBUTING](/contributing/) page.
 
-<!-- #### Thank you to the contributors of the API Certification Suite!
+#### Thank you to the contributors of the API Certification Suite!
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
@@ -104,11 +104,11 @@ email, or any other method with the owners of this repository before making a ch
      <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
   </li>
 {% endfor %}
-</ul> -->
+</ul>
 
 ### Code of Conduct
 
 In the interest of fostering an open and welcoming environment in Inditex Tech, we as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone.
 
-Check our [Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) for more information.
+Check our [Code of Conduct](/CODE_OF_CONDUCT/) for more information.

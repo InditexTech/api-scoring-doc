@@ -32,9 +32,9 @@ this project.
 
 ## Contribution Guidelines
 
-- All contributors are expected to follow the project's [code of conduct](CODE_OF_CONDUCT.md). Please be respectful and
+- All contributors are expected to follow the project's [code of conduct](/CODE_OF_CONDUCT/). Please be respectful and
 considerate towards other contributors.
-- Before starting work on a new feature or fix, check existing [issues](../../issues) and [pull requests](../../pulls)
+- Before starting work on a new feature or fix, check existing issues and pull requests
 to avoid duplications and unnecessary discussions.
 - If you wish to work on an existing issue, comment on the issue to inform other contributors that you are working on it.
 This will help coordinate efforts and prevent conflicts.
@@ -54,7 +54,7 @@ Make sure that you have:
 
 ## Helpful Resources
 
-- [Issues](../../issues): Check open issues and look for opportunities to contribute. Make sure to open an issue before
+- Issues: Check open issues and look for opportunities to contribute. Make sure to open an issue before
 starting work on a new feature or fix.
 
 Thank you for your time and contribution! Your work helps to grow and improve this project. If you have any questions, feel free to reach out to us.

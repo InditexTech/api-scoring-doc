@@ -46,7 +46,7 @@ Once you install this CLI, you will be able to:
     npm i
     ```
 
-4. Link the `apicli` command to local installation:  
+4. Link the `apicli` command to local installation:
 
     ```zsh
     npm link

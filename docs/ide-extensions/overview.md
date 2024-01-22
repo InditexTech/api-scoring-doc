@@ -47,7 +47,7 @@ For these tools to work, **you must deploy the Scoring microservice**: the main 
 
 ## SPA deployment
 
-You need to have the SPA running so that the extensions are working seamesly. To do so, you need to deploy the SPA locally with the following commands:
+You need to have the SPA running so that the extensions are working seamlessly. To do so, you need to deploy the SPA locally with the following commands:
 
 1. Clone [this repository](https://github.com/InditexTech/api-scoring-ide-plugins):
 

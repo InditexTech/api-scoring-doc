@@ -8,7 +8,7 @@ nav_order: 1
 # Scoring service
 {: .no_toc }
 
-The microservice responsible for getting a grade for each API.
+It is the microservice responsible for getting a grade for each API.
 {: .fs-6 .fw-300 }
 
 <br>
@@ -31,12 +31,12 @@ API Scoring is the microservice responsible for getting a grade for each API. It
 
 This open-source API-First-based scoring service evaluates your APIs according to a set of rules that the user can customize.
 
-We want to make it simple. In the end, each certified API will be broken down into a single grade, which will mean how well-design your API is. 
+We want to make it simple. In the end, each certified API will be broken down into a single grade, which will mean how well-designed your API is. 
 
 If you want to know if your API complies with your design rules, if it addresses some of the OWASP vulnerabilities, and if it complies with documentation guidelines… this is your service.
 
 {: .warning }
-Due to an [issue in protolint](https://github.com/yoheimuta/protolint/issues/144), getting a score for gRPC APIs in Windows it is not possible.
+Due to an [issue in protolint](https://github.com/yoheimuta/protolint/issues/144), getting a score for gRPC APIs in Windows is not possible.
 
 ## Installation
 
@@ -62,7 +62,7 @@ Deploy the service following these steps:
     npm i
     ```
 
-4. Optionally, add your GitHub credentials one of the following ways to be able to validate private repositories:
+4. Optionally, add your GitHub credentials in one of the following ways to be able to validate private repositories:
 
    - as environment variables:
 
@@ -96,7 +96,7 @@ You can also use the [IDE Extensions](/ide-extensions/overview/) to help you des
 {: .mb-4}
 
 {: .highlight}
-You can check the **available enpoinds** in the [API](/scoring-system/api/) section.
+You can check the **available endpoints** in the [API](/scoring-system/api/) section.
 
 ## Performance and configuration
 {: .mt-8}
@@ -133,7 +133,7 @@ The scoring system for each component will follow the previously mentioned *lett
 |50 - 74|C|
 |0 - 49|D|
 
-To obtain the final score of an API, the microservice considers every *individually-certified* module and operates according to a **weighted average**.
+To obtain the final score of an API, the microservice considers every *individually certified* module and operates according to a **weighted average**.
 {: .mt-8}
 
 {: .highlight}
@@ -216,7 +216,7 @@ The Design and Security modules' grade is calculated the same way, according to 
 </p>
 
 
-The score of these modules depends, as you see on the _Figure 1_, on the following values:
+The score of these modules depends, as you see in the _Figure 1_, on the following values:
 
 * `Warnings`: number of warning-type rules that broke.
 * `Errors`: number of error-type rules that broke.
@@ -264,7 +264,7 @@ Each module's rules can be whether warnings, errors, or information. The breach 
 - **Error**: Failures of this severity might severely impact the usage of this contract as the source of truth, or it's not valid at all — they have a higher impact on the grade.
 - **Information**: Suggestions on how to improve your API documentation that doesn't mean it's poorly documented — They have **no impact on the grade**.
 
-A correction factor is added for error-type rules breach, assigning them a higher weight.
+A correction factor is added for error-type rule breaches, assigning them a higher weight.
 
 
 
@@ -286,7 +286,7 @@ Once you install and deploy the service as explained in the [⚙️ Installation
     curl --location --request POST 'http://localhost:8080/apifirst/v1/rulesets/refresh'
 <!-- todo: update localhost URL -->
 
-* You can change the location where the rules are downloaded modifying the configuration file:
+* You can change the location where the rules are downloaded by modifying the configuration file:
 
   ```yml
   cerws:

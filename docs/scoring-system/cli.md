@@ -4,6 +4,11 @@ title: CLI
 parent: Scoring System
 nav_order: 4
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Scoring **CLI**
 {: .no_toc }

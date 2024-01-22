@@ -4,6 +4,11 @@ title: Scoring System
 nav_order: 2
 has_children: true
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Scoring system
 {: .no_toc }

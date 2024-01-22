@@ -4,6 +4,11 @@ title: API Hub
 parent: IDE Extensions
 nav_order: 1
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # API Hub
 {: .no_toc }

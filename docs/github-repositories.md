@@ -3,6 +3,12 @@ layout: page
 title: API Scoring Suite on GitHub
 nav_order: 4
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
+
 <div class="d-flex">
     <div>
         <p>You can find the API Scoring Suite distributed in two repositories:</p>

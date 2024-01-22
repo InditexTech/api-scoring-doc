@@ -4,6 +4,11 @@ title: Quick Fix
 parent: IDE Extensions
 nav_order: 2
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Spectral quick fix
 {: .no_toc }

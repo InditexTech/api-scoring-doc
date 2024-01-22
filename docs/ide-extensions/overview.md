@@ -4,6 +4,11 @@ title: IDE Extensions
 nav_order: 3
 has_children: true
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # IDE Extensions
 {: .no_toc }

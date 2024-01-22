@@ -5,6 +5,11 @@ permalink: /
 nav_order: 1
 description: The API Scoring Suite is a compound of tools that make your journey of designing an API much more easier.
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Optimize your APIs with the **API Scoring Suite**
 {: .fs-9 }

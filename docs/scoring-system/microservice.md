@@ -4,6 +4,11 @@ title: Microservice
 parent: Scoring System
 nav_order: 1
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Scoring service
 {: .no_toc }

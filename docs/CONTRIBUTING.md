@@ -3,6 +3,11 @@ layout: page
 title: Contributing
 nav_order: 5
 ---
+<!--
+SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
+ 
+SPDX-License-Identifier: Apache-2.0
+-->
 
 # Contribution guidelines
 {: .fs-9 }

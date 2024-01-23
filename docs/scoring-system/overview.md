@@ -6,7 +6,7 @@ has_children: true
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -23,5 +23,5 @@ The Scoring System is based on the following pieces:
 - [x] **API CLI** - The CLI that interacts with the service from the terminal.
 
 <span class= "d-flex mt-10">
-  [<img src="/scoring-system/github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-engine){: .btn .mx-auto  .mt-2 .mb-2}
+  [<img src="./scoring-system/github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-engine){: .btn .mx-auto  .mt-2 .mb-2}
 </span>

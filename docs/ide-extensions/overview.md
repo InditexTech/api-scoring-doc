@@ -6,7 +6,7 @@ has_children: true
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -17,8 +17,8 @@ The set of extensions that integrates the API-design essential tools into their 
 {: .fs-6 .fw-300 }
 
 <div align="center">
-    <img src="/ide-extensions/quick.svg" width="100px" style="margin-right: 30px"> 
-    <img src="/ide-extensions/api-hub-logo.svg" width="100px" style="margin-right: 30px">
+    <img src="./ide-extensions/quick.svg" width="100px" style="margin-right: 30px">
+    <img src="./ide-extensions/api-hub-logo.svg" width="100px" style="margin-right: 30px">
 </div>
 
 <br>
@@ -85,4 +85,3 @@ To install the extensions, you just need to search for all the following extensi
 
 [VS Code Marketplace](https://marketplace.visualstudio.com/VSCode){: .btn .btn-blue .ml-auto .mr-2}
 [IntelliJ Marketplace](https://plugins.jetbrains.com/){: .btn .btn-purple .mr-auto}
-

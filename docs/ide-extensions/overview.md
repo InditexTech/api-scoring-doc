@@ -17,8 +17,8 @@ The set of extensions that integrates the API-design essential tools into their 
 {: .fs-6 .fw-300 }
 
 <div align="center">
-    <img src="./ide-extensions/quick.svg" width="100px" style="margin-right: 30px">
-    <img src="./ide-extensions/api-hub-logo.svg" width="100px" style="margin-right: 30px">
+    <img src="../quick.svg" width="100px" style="margin-right: 30px">
+    <img src="../api-hub-logo.svg" width="100px" style="margin-right: 30px">
 </div>
 
 <br>

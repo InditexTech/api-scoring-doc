@@ -23,5 +23,5 @@ The Scoring System is based on the following pieces:
 - [x] **API CLI** - The CLI that interacts with the service from the terminal.
 
 <span class= "d-flex mt-10">
-  [<img src="./scoring-system/github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-engine){: .btn .mx-auto  .mt-2 .mb-2}
+  [<img src="../github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-engine){: .btn .mx-auto  .mt-2 .mb-2}
 </span>

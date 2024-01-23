@@ -42,7 +42,7 @@ To work, the API hub uses an in-IDE-integrated SPA, that displays visual informa
 In the **VS Code**, you can take advantage of the [Spectral quick fix](#spectral-quick-fix) plugin to easily correct the linted errors. See in the previous gif how errors are corrected with a click!
 
 <span class= "d-flex mt-5">
-  [<img src="../github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-ide-plugins){: .btn .mx-auto  .mt-2 .mb-4}
+  [<img src="../../github-logo-gradient.png" width="30px" style="vertical-align: middle;"> Check the repository!](https://github.com/InditexTech/api-scoring-ide-plugins){: .btn .mx-auto  .mt-2 .mb-4}
 </span>
 
 {: .note}

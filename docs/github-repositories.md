@@ -5,7 +5,7 @@ nav_order: 4
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -19,7 +19,7 @@ SPDX-License-Identifier: Apache-2.0
     </div>
     <div>
         <span>
-            <img src="/github-logo-gradient.png" width="100px" class="ml-10">
+            <img src="../github-logo-gradient.png" width="100px" class="ml-10">
         </span>
     </div>
 </div>

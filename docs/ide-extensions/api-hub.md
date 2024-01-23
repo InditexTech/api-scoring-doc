@@ -6,7 +6,7 @@ nav_order: 1
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -60,9 +60,9 @@ To start using the API hub extension, you need to configure two URLs in the **AP
     You can customize the file and add as many APIs and specifications as you want!
 
 2. Click on the API 360 Certification button on the right-bottom corner of the VS Code window. This action will display a web server on a VS Code tab.
-   
+
    <p align="center">
-   <img src="/ide-extensions/buttons.png" style="display: block; width: 300px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
+   <img src="../buttons.png" style="display: block; width: 300px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
    </p>
 
 3. Check out how well-designed your API is through the scores obtained by the scoring service.
@@ -81,7 +81,7 @@ To start using the API hub extension, you need to configure two URLs in the **AP
 
 When you open the iFrame, the following view is displayed:
    <p align="center">
-      <img src="/ide-extensions/iFrame.png" style="display: block; width: 450px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
+      <img src="../iFrame.png" style="display: block; width: 450px; margin-left: auto; margin-right: auto; padding-top:10px; padding-bottom:10px"/>
    </p>
 
 All the APIs that exist in the repository are going to be shown as tabs. Each API gets a score individually, and you can switch between them to see which are the warnings for each of them.

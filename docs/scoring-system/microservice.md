@@ -6,7 +6,7 @@ nav_order: 1
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -17,9 +17,9 @@ It is the microservice responsible for getting a grade for each API.
 {: .fs-6 .fw-300 }
 
 <br>
-<!-- 
+<!--
 <div >
-    <img src="/scoring-system/cert-image.png" width="20%" style="float: right;"> 
+    <img src="../cert-image.png" width="20%" style="float: right;">
 </div> -->
 
 ## Table of contents
@@ -36,7 +36,7 @@ API Scoring is the microservice responsible for getting a grade for each API. It
 
 This open-source API-First-based scoring service evaluates your APIs according to a set of rules that the user can customize.
 
-We want to make it simple. In the end, each certified API will be broken down into a single grade, which will mean how well-designed your API is. 
+We want to make it simple. In the end, each certified API will be broken down into a single grade, which will mean how well-designed your API is.
 
 If you want to know if your API complies with your design rules, if it addresses some of the OWASP vulnerabilities, and if it complies with documentation guidelines… this is your service.
 
@@ -45,9 +45,9 @@ Due to an [issue in protolint](https://github.com/yoheimuta/protolint/issues/144
 
 ## Installation
 
-Know that we recommend the use of [Node v18.13.0](https://nodejs.org/es/blog/release/v18.13.0/) to work on this project. 
+Know that we recommend the use of [Node v18.13.0](https://nodejs.org/es/blog/release/v18.13.0/) to work on this project.
 
-Deploy the service following these steps: 
+Deploy the service following these steps:
 
 1. Clone [this repository](https://github.com/InditexTech/api-scoring-engine):
 
@@ -55,13 +55,13 @@ Deploy the service following these steps:
     git clone git@github.com:InditexTech/api-scoring-engine.git
     ```
 
-2. Place yourself in the correct package: 
+2. Place yourself in the correct package:
 
     ```zsh
     cd packages/certification-service/code/
     ```
 
-3. Install the dependencies: 
+3. Install the dependencies:
 
     ```zsh
     npm i
@@ -80,17 +80,17 @@ Deploy the service following these steps:
       cerws:
         common:
           rest:
-            client:        
+            client:
               github-rest-client:
                 username: <GITHUB_USERNAME>
                 password: <GITHUB_PERSONAL_ACCESS_TOKEN>
       ```
 
-5. Run the service: 
+5. Run the service:
 
     ```bash
     npm start
-    ``` 
+    ```
 
 <br>
 
@@ -149,7 +149,7 @@ Notice that not every module is supported by every protocol. Remember that **Sec
 
 <table>
   <thead>
-    <tr> 
+    <tr>
       <th colspan="2">Module</th>
       <th colspan="2">Weight</th>
     </tr>
@@ -216,7 +216,7 @@ The Design and Security modules' grade is calculated the same way, according to 
 <!-- $$ModuleGrade = \left(1 -\frac{Warnings}{TotalRules}-\frac{Errors}{TotalRules}* N\right) * 100$$ -->
 
 <p align="center">
-  <img src="/scoring-system/module-grade-1.png" style="display: block; width: 55%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="../module-grade-1.png" style="display: block; width: 55%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 1. Module grade calculation.</span>
 </p>
 
@@ -252,10 +252,10 @@ $$OverallScore = DesignGrade * 0.85 + DocumentationGrade * 0.15
 $$ -->
 
 <p align="center">
-  <img src="/scoring-system/overall-score-1.png" style="display: block; width: 95%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="../overall-score-1.png" style="display: block; width: 95%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 2. Overall score calculation (3 modules approach).</span>
   <br><br>
-  <img src="/scoring-system/overall-score-2.png" style="display: block; width: 73%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
+  <img src="../overall-score-2.png" style="display: block; width: 73%; margin-left: auto; margin-right: auto; padding-top:5px; padding-bottom:10px"/>
   <span class="fs-2">Figure 3. Overall score calculation (2 modules approach).</span>
 </p>
 
@@ -284,7 +284,7 @@ You can **modify the score calculation** by adjusting some parameters in the [`c
 
 - You can also modify in the Documentation module the weights of the base and custom rules in `rules-weights`.
 
-You can **modify the whole set of rules** in the `lint-repository-folder` property.  The default route is the set of rules in this repository, but you can change it to the Rulesets repository. 
+You can **modify the whole set of rules** in the `lint-repository-folder` property.  The default route is the set of rules in this repository, but you can change it to the Rulesets repository.
 
 Once you install and deploy the service as explained in the [⚙️ Installation section](#-installation), you can make a `POST` to the `{{baseUrl}}/rulesets/refresh` endpoint (with this request, the application will download the new ruleset to the `/src/rules` folder, overwriting the current rules):
 
@@ -305,8 +305,8 @@ Once you install and deploy the service as explained in the [⚙️ Installation
   * If you modify this path you will need to update the following properties to update their paths too:
 
     ```yml
-    cerws:    
-      lint:    
+    cerws:
+      lint:
         rest:
           general-default-ruleset: # Path of the file with the rules that will be applied in the linting of rest APIs
           security-default-ruleset: # Path of the file with the rules that will be applied in the security linting of rest APIs
@@ -314,12 +314,12 @@ Once you install and deploy the service as explained in the [⚙️ Installation
           general-default-ruleset: # Path of the file with the rules that will be applied in the linting of async APIs
         avro:
           general-default-ruleset: # Path of the file with the rules that will be applied in the linting of async APIs with Avro
-        grpc:      
-          configuration-directory: # Path of the protolint configuration 
+        grpc:
+          configuration-directory: # Path of the protolint configuration
           severities-file:  # Path of the configuration file with the severity of the violations for grpc rules (by default the severity is warn)
-      markdown:    
-        markdown-lint-config: # Path of the markdownlint configuration file 
-        markdown-lint-api-custom-rules: # File path with custom markdownlint rules 
+      markdown:
+        markdown-lint-config: # Path of the markdownlint configuration file
+        markdown-lint-api-custom-rules: # File path with custom markdownlint rules
     ```
 * You can also use the [apicli](/scoring-system/cli/) tool to update the rulesets with the [Rulesets](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/src/rules) repository with a CLI command.
 

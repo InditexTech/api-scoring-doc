@@ -5,7 +5,7 @@ nav_order: 5
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -37,7 +37,7 @@ this project.
 
 ## Contribution Guidelines
 
-- All contributors are expected to follow the project's [code of conduct](/CODE_OF_CONDUCT/). Please be respectful and
+- All contributors are expected to follow the project's [code of conduct](./CODE_OF_CONDUCT/). Please be respectful and
 considerate towards other contributors.
 - Before starting work on a new feature or fix, check existing issues and pull requests
 to avoid duplications and unnecessary discussions.

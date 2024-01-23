@@ -7,7 +7,7 @@ description: The API Scoring Suite is a compound of tools that make your journey
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -18,7 +18,7 @@ This open-source API-First-based Scoring service evaluates your APIs according t
 {: .fs-6 .fw-300 }
 
 [Get started now](#get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub](/github-repositories){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on GitHub](./github-repositories){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -70,20 +70,20 @@ The **API Scoring Suite** is a set of tools that can help you achieve the best A
 {: .warning}
 TO DO -->
 
-## Get started 
+## Get started
 {: .mb-3}
 
 Let's start and see how to build the whole ecosystem up!
 
-1. First of all, you need to **deploy the certification microservice**. To do so, follow the [Microservice installation guide](/scoring-system/microservice/#installation).
+1. First of all, you need to **deploy the certification microservice**. To do so, follow the [Microservice installation guide](./scoring-system/microservice/#installation).
 
-2. Test the microservice by [Installing the CLI](/scoring-system/cli/#installation-and-usage).
+2. Test the microservice by [Installing the CLI](./scoring-system/cli/#installation-and-usage).
 
-3. Once you have verified that the microservice is up and running, you can now [deploy the SPA](/ide-extensions/overview/#spa-deployment) that the API Hub extension will use later on.
+3. Once you have verified that the microservice is up and running, you can now [deploy the SPA](./ide-extensions/overview/#spa-deployment) that the API Hub extension will use later on.
 
-4. [Install the API Hub](/ide-extensions/overview/#installation) in VS Code or IntelliJ and [configure it](/ide-extensions/api-hub/#settings) to work with the scoring service.
+4. [Install the API Hub](./ide-extensions/overview/#installation) in VS Code or IntelliJ and [configure it](./ide-extensions/api-hub/#settings) to work with the scoring service.
 
-5. [Install the Quick Fix](/ide-extensions/overview/#installation) to design faster!
+5. [Install the Quick Fix](./ide-extensions/overview/#installation) to design faster!
 
 ## About the project
 {: .mb-3}
@@ -99,7 +99,7 @@ The **API Scoring Suite** is distributed by an [Apache License 2.0](https://gith
 {: .mb-3}
 
 When contributing to this repository, please discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor on the [CONTRIBUTING](/contributing/) page.
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor on the [CONTRIBUTING](./contributing/) page.
 
 #### Thank you to the contributors of the API Certification Suite!
 
@@ -116,4 +116,4 @@ email, or any other method with the owners of this repository before making a ch
 In the interest of fostering an open and welcoming environment in Inditex Tech, we as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone.
 
-Check our [Code of Conduct](/CODE_OF_CONDUCT/) for more information.
+Check our [Code of Conduct](./CODE_OF_CONDUCT/) for more information.

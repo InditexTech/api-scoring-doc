@@ -17,10 +17,6 @@ It is the microservice responsible for getting a grade for each API.
 {: .fs-6 .fw-300 }
 
 <br>
-<!--
-<div >
-    <img src="../cert-image.png" width="20%" style="float: right;">
-</div> -->
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -94,14 +90,14 @@ Deploy the service following these steps:
 
 <br>
 
-You can make use of this service by just making a request to its [API](/scoring-system/api/) or, even better, using the [Scoring CLI](/scoring-system/cli/) tool that we have developed for this matter.
+You can make use of this service by just making a request to its [API](./scoring-system/api/) or, even better, using the [Scoring CLI](./scoring-system/cli/) tool that we have developed for this matter.
 {: .mb-6}
 
-You can also use the [IDE Extensions](/ide-extensions/overview/) to help you design your API at the same time you validate it with the service. The API hub provides the rating of the modules evaluated on the scoring service, giving you real-time insights into what score to expect.
+You can also use the [IDE Extensions](./ide-extensions/overview/) to help you design your API at the same time you validate it with the service. The API hub provides the rating of the modules evaluated on the scoring service, giving you real-time insights into what score to expect.
 {: .mb-4}
 
 {: .highlight}
-You can check the **available endpoints** in the [API](/scoring-system/api/) section.
+You can check the **available endpoints** in the [API](./scoring-system/api/) section.
 
 ## Performance and configuration
 {: .mt-8}
@@ -127,7 +123,7 @@ The scoring system for each component will follow the previously mentioned *lett
 * The final score is a weighted average of the modules that apply.
 * For each type of broken rule, a specific number of points is deducted from the score.
 * There are three kinds of rules: errors, warnings, and information. This latter kind does not decrease the grade anyhow.
-* Designers can consult which rules have been broken using the [API 360 hub extension](/ide-extensions/api-hub/), so they know how to improve them.
+* Designers can consult which rules have been broken using the [API 360 hub extension](./ide-extensions/api-hub/), so they know how to improve them.
 {: .mb-7}
 
 | Score | Letter |
@@ -321,7 +317,7 @@ Once you install and deploy the service as explained in the [⚙️ Installation
         markdown-lint-config: # Path of the markdownlint configuration file
         markdown-lint-api-custom-rules: # File path with custom markdownlint rules
     ```
-* You can also use the [apicli](/scoring-system/cli/) tool to update the rulesets with the [Rulesets](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/src/rules) repository with a CLI command.
+* You can also use the [apicli](./scoring-system/cli/) tool to update the rulesets with the [Rulesets](https://github.com/InditexTech/api-scoring-engine/blob/main/packages/certification-service/code/src/rules) repository with a CLI command.
 
 
 ### New rules creation

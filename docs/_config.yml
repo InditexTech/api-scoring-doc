@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 # SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
 # SPDX-License-Identifier: Apache-2.0
-# 
+#
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
@@ -16,8 +16,8 @@ title: API Scoring Suite
 email: oso@inditex.com
 description: >- # this means to ignore newlines until "baseurl:"
   Boost your API's performance with our cutting-edge API Scoring system, which evaluates design quality and provides insighs for enhancement.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/api-scoring-doc" # the subpath of your site, e.g. /blog
+url: "https://inditextech.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  albalro
 repository: InditexTech/api-scoring-doc
 
@@ -98,7 +98,7 @@ heading_anchors: true
 # Footer content
 # appears at the bottom of every page's main content
 # Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust markup / liquid-based content.
-footer_content: "Distributed by an <a href=\"https://github.com/InditexTech/api-scoring-engine/blob/main/LICENSE\">Apache License 2.0.</a>"
+footer_content: "Distributed by an <a href=\"https://github.com/InditexTech/api-scoring-doc/blob/main/LICENSE.md\">Apache License 2.0.</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -119,7 +119,7 @@ back_to_top_text: "Back to top"
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
-ga_tracking: UA-2709176-10
+ga_tracking: ""
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 color_scheme: nil

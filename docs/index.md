@@ -99,7 +99,7 @@ The **API Scoring Suite** is distributed by an [Apache License 2.0](https://gith
 {: .mb-3}
 
 When contributing to this repository, please discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor on the [CONTRIBUTING](./contributing/) page.
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor on the [CONTRIBUTING](./CONTRIBUTING/) page.
 
 #### Thank you to the contributors of the API Certification Suite!
 

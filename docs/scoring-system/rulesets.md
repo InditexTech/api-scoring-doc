@@ -6,16 +6,12 @@ nav_order: 2
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
 # Rulesets
 {: .no_toc }
-
-TO DO
-{: .fs-6 .fw-300 }
-
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -171,9 +167,9 @@ TO DO
 
 
 ---
-												
+
 ### Proto
 
 | Rule | Description |
-| --	| -- |												
+| --	| -- |
 | response-schema-not-defined | You have not defined any schemas for responses that should contain a body. Only acceptable if the returned HTTP status code is 204 or 304 (no content allowed for these codes), see RFC 7231 and RFC 7232 |

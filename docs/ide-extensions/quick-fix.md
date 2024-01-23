@@ -6,7 +6,7 @@ nav_order: 2
 ---
 <!--
 SPDX-FileCopyrightText: 2023 Industria de Diseño Textil S.A. INDITEX
- 
+
 SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -40,4 +40,4 @@ To **correct the warnings/errors**, put the cursor above the highlighted text, a
 
 If you **click on one of the options**, you quickly fix the code. Nice and easy.
 
-![gif](/ide-extensions/quick-fix-gif.gif)
+![gif](../quick-fix-gif.gif)

@@ -62,7 +62,7 @@ You need to have the SPA running so that the extensions are working seamlessly. 
 2. Navigate to the SPA directory:
 
     ```bash
-    cd plugins/spa-apiscoringviewer/code
+    cd plugins/spa-apiscoringviewer
     ```
 
 
@@ -80,13 +80,12 @@ You need to have the SPA running so that the extensions are working seamlessly. 
     pnpm start
     ```
 
-> [!TIP]
+{: .tip }
 > If you need to remove all dependencies, you can use the following command:
 >
 > ```bash
 > pnpm clean
 > ```
-
 
 ## Installation
 

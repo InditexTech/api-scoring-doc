@@ -59,29 +59,73 @@ You need to have the SPA running so that the extensions are working seamlessly. 
     ```
 
 
-2. Place yourself in the correct directory:
+2. Navigate to the SPA directory:
 
     ```bash
     cd plugins/spa-apiscoringviewer/code
     ```
 
 
-3. Install the dependencies:
+3. Install dependencies:
 
     ```bash
-    npm i
+    npm install --global pnpm
+    pnpm install
     ```
 
 
 4. Once the process finishes, start the SPA:
 
     ```bash
-    npm run start
+    pnpm start
     ```
+
+> [!TIP]
+> If you need to remove all dependencies, you can use the following command:
+>
+> ```bash
+> pnpm clean
+> ```
+
 
 ## Installation
 
-To install the extensions, you just need to search for all the following extensions in the IDE's marketplace and download them.
+To install the extensions, follow the steps outlined below for each plugin.
 
-[VS Code Marketplace](https://marketplace.visualstudio.com/VSCode){: .btn .btn-blue .ml-auto .mr-2}
-[IntelliJ Marketplace](https://plugins.jetbrains.com/){: .btn .btn-purple .mr-auto}
+### VSCode
+
+1. Clone the repository:
+
+    ```bash
+    git clone git@github.com:InditexTech/api-scoring-ide-plugins.git
+    ```
+
+2. Install VSCE by following the official documentation [documentation](https://www.npmjs.com/package/@vscode/vsce), or use the command below::
+
+    ```bash
+    npm install --global @vscode/vsce
+    ```
+
+3. Navigate to `plugins/vscode-apiscoring/code` folder and run the following commands:
+
+    ```bash
+    npm install
+    vsce package
+    ```
+
+4. The previous step will generate a `.vsix` file in the directory. Use this file to install the extension in VSCode.
+
+    
+### IntelliJ
+
+1. Clone the repository:
+
+    ```bash
+    git clone git@github.com:InditexTech/api-scoring-ide-plugins.git
+    ```
+
+2. Build the plugin from `plugins/intellij-apiscoring/code`:
+
+    ```bash
+    ./gradlew build
+    ```
